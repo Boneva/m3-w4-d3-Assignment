@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= `${title}`
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/styles.css')
+
+ body
+    header
+      nav
+        ul
+          li: a(href='/') Home
+          li |
+          li: a(href='#') Blog
+          li: a(href='/register') Registration
+    
+    block content
+    
+    footer &copy; Copyright 2025

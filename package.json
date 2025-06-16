@@ -1,0 +1,33 @@
+{
+  "name": "express-form",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon ./start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "http-auth": "^4.2.1",
+    "mongoose": "^8.15.1",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Boneva/m3-w4-d3-Assignment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Boneva/m3-w4-d3-Assignment/issues"
+  },
+  "homepage": "https://github.com/Boneva/m3-w4-d3-Assignment#readme",
+  "description": ""
+}

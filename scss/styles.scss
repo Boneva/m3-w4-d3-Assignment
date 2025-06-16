@@ -1,0 +1,79 @@
+// styles.scss
+
+@import 'colors'; 
+@import 'nav';
+
+body {
+  font-family: $font-sans;
+  margin: 0;
+  padding: 0;
+  background-color: $color-yellow;
+}
+
+main {
+  display: flex;
+  background-color: $color-white;
+  margin: 20px auto;
+  max-width: 900px;
+  border: 10px solid $color-white;
+
+  #intro-text {
+    background-color: $color-light-gray;
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    span {
+      font-family: $font-cursive;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: $color-dark-gray;
+    }
+
+    p {
+      font-size: 14px;
+      color: $color-dark-gray;
+      margin-bottom: 20px;
+    }
+
+    .submit-buttton {
+      background-color: $color-yellow;
+      color: $color-white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+
+      &:hover {
+        background-color: $color-yellow;
+      }
+    }
+  }
+
+  #intro-image {
+    flex: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}
+
+footer {
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 12px;
+  background-color: $color-yellow;
+  color: $color-dark-gray;
+}
