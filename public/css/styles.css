@@ -2,7 +2,7 @@
 /* SCSS */
 nav {
   font-size: 1em;
-  font-weight: bold;
+  font-font-weight: bold;
   float: left;
 }
 nav ul {
@@ -11,11 +11,11 @@ nav ul {
 nav ul li {
   float: left;
   margin: 0 5px 0 0;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 nav ul li a:hover {
   text-decoration: underline;
@@ -29,7 +29,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, Sans-Serif;
-  background: #daaa0e;
+  background: rgb(218, 170, 14);
 }
 
 header {
@@ -39,10 +39,11 @@ header {
 }
 
 main {
-  background: white;
+  background: rgb(255, 255, 255);
   width: 1350px;
   min-height: 535px;
   padding: 1.5%;
+  display: flex;
   margin: 0 auto;
 }
 main #intro-image {
@@ -56,17 +57,65 @@ main #intro-text {
   width: 550px;
   height: 407px;
   float: left;
-  background: #d4d5d8;
+  background: rgb(212, 213, 216);
   text-align: center;
   padding-top: 8em;
 }
 main #intro-text h3 {
   font-size: 2em;
-  color: #313130;
+  color: rgb(49, 49, 48);
 }
 main #intro-text span {
   font-family: "Sacramento", cursive;
   font-size: 2em;
+}
+main section#register {
+  width: 500px;
+  float: center;
+  padding: 2em;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+}
+main section#register h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(49, 49, 48);
+  margin-bottom: 1.5em;
+}
+main section#register form.form-registration {
+  display: flex;
+  flex-direction: column;
+}
+main section#register form.form-registration label {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 1em;
+  color: rgb(49, 49, 48);
+}
+main section#register form.form-registration input[type=text],
+main section#register form.form-registration input[type=email],
+main section#register form.form-registration input[type=password] {
+  padding: 0.6em;
+  margin-top: 0.3em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1em;
+  width: 100%;
+}
+main section#register form.form-registration .btn {
+  margin-top: 2em;
+  padding: 0.8em;
+  background-color: rgb(218, 170, 14);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 0.95em;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+main section#register form.form-registration .btn:hover {
+  background-color: rgb(239.7629310345, 187.5215517241, 17.7370689655);
 }
 
 footer {
@@ -76,16 +125,16 @@ footer {
   font-size: 0.85em;
 }
 
-button, .submit-buttton {
-  color: white;
+button, .submit-button {
+  color: rgb(255, 255, 255);
   width: 100px;
   height: 40px;
-  background: #daaa0e;
+  background: rgb(218, 170, 14);
   margin-top: 2em;
 }
 
-.submit-buttton {
-  border: 1px #313130;
+.submit-button {
+  border: 1px solid rgb(49, 49, 48);
 }
 
 /*# sourceMappingURL=styles.css.map */
